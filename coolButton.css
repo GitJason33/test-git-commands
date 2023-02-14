@@ -1,0 +1,49 @@
+*{ box-sizing: border-box;}
+.containInfo{
+   width: 150px;
+}
+.containInfo button{
+   width: 100%;
+   height: 100%;
+   font: bold 20px 'courier New', Courier, monospace;
+   border-radius: 0.5rem;
+   cursor: pointer;
+   box-shadow: 0 6px #999;
+}
+.containInfo button:hover{
+   color: darkred;
+   border-color: darkred;
+}
+.containInfo button:active{
+   transform: translateY(3px);
+   box-shadow: 0 3px #666;
+}
+
+/*------ buttons design ------*/
+.prevNext{
+   display: grid;
+   grid-template-columns: auto auto auto;
+   align-items: center;
+   column-gap: 10px;
+   justify-content: center;
+}
+.buttons button, #pageNum span{
+   font-size: 24px;
+}
+.buttons button{
+   border: 2px outset black;
+   cursor: pointer;
+   border-radius: 0.5rem;
+   background-color: lightgray;
+   box-shadow: 0 4px #999;
+
+}
+.buttons button:hover{
+   border-color: darkred;
+   color: darkred;
+}
+.buttons button:active{
+   transform: translateY(3px);
+   box-shadow: 0 2px #666;
+}
+/*------ buttons design end ------*/

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.slider-container {
+  max-width: 500px;
+  height: 300px;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: slider 10s linear infinite;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide:nth-child(1) {
+  animation-delay: 0s;
+  opacity: 1;
+}
+
+.slide:nth-child(2) {
+  animation-delay: 5s;
+}
+
+.slide:nth-child(3) {
+  animation-delay: 10s;
+}
+
+.slide:nth-child(4) {
+  animation-delay: 15s;
+}
+
+.slide:nth-child(5) {
+  animation-delay: 20s;
+}
+
+.slide:nth-child(6) {
+  animation-delay: 25s;
+}
+
+@keyframes slider {
+   0% {
+      left: -100%;
+      right: 0;
+      opacity: 0;
+   }
+   50% {
+      left: 0;
+      right: 0;
+      opacity: 1;
+   }
+   100% {
+      left: 100%;
+      opacity: 0;
+   }
+}
+    </style>
+</head>
+<body>
+   <div class="slider-container">
+      <div class="slide">
+         <img src="./images/logo.png">
+      </div>
+      <div class="slide">
+         <img src="./images/cat.gif">
+      </div>
+      <div class="slide">
+         <img src="./images/logo.png">
+      </div>
+      <div class="slide">
+         <img src="./images/cat.gif">
+      </div>
+      <div class="slide">
+         <img src="./images/logo.png">
+      </div>
+      <div class="slide">
+         <img src="./images/cat.gif">
+      </div>
+   </div>
+</body>
+</html>
